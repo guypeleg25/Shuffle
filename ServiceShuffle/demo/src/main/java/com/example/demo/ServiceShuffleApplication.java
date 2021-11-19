@@ -8,6 +8,7 @@ public class ServiceShuffleApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ServiceShuffleApplication.class, args);
+		System.out.println("ServiceShuffle started");
 	}
 
 }
