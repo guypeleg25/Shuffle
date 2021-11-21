@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ServiceLog
+server:
+  servlet:
+    context-path: /ServiceLog
+  port: 8663
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    hostname: ${COMPUTERNAME}

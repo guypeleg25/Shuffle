@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ServiceShuffle
+server:
+  servlet:
+    context-path: /ServiceShuffle
+  port: 8662
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    hostname: ${COMPUTERNAME}
+serviceLog.url: http://localhost:8663/ServiceLog/print
